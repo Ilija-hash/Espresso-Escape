@@ -1,0 +1,152 @@
+h2 {
+  text-align: center;
+  margin-bottom: 32px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.form-wrapper {
+  max-width: 60%;
+  margin: 0 auto;
+}
+
+input,
+select,
+textarea,
+option,
+optgroup {
+  color: #0d1817;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+textarea {
+  resize: none;
+  height: 120px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  transform: scale(1.5);
+  margin-right: 8px;
+  accent-color: #d3fbd8;
+}
+
+.radio,
+.check {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+label {
+  margin-right: 8px;
+}
+
+.form-button {
+  color: #0d1817;
+  font-size: 18px;
+  padding: 16px;
+  background-color: #d3fbd8;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.form-button:hover {
+  background-color: #a0bda3;
+}
+
+@media screen and (max-width: 1024px) {
+  .form-wrapper {
+    max-width: 80%;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    margin-bottom: 16px;
+  }
+}
+@media screen and (max-width: 476px) {
+  .form-wrapper {
+    max-width: 100%;
+  }
+}
+
+h2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.name-input {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.drop-menu {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.6s;
+}
+
+.check-button-1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.8s;
+}
+
+.check-button-2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 1s;
+}
+
+.check-button-3 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 1.2s;
+}
+
+.address-input {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.9s;
+}
+
+.radio-button-1 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 1.4s;
+}
+.radio-button-2 {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 1.6s;
+}
+.comment-input {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 1.8s;
+}
+.form-button {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 2s;
+}

@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+}
+
+body {
+  background-color: #0d1817;
+}
+
+section {
+  margin: 64px 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 24px;
+}
+
+a {
+  font-size: 20px;
+}
+.link{
+  padding: 8px;
+  border-radius: 10px;
+  
+  transition: background-color 0.3s ease;
+}
+.link:hover{
+  background-color: #0D5950;
+}
+
+header {
+  background-color: #06302e;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 32px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+}
+.nav-links {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.nav-button {
+  background-color: #d3fbd8;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+  color: #0d1817;
+  transition: background-color 0.3s ease;
+}
+.nav-button:hover{
+  background-color: #a0bda3;
+}
+
+
+.burger {
+  cursor: pointer;
+  z-index: 1;
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 32px;
+  height: 3px;
+  margin: 6px auto;
+  background-color: white;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+.burger.active .bar1 {
+  transform: rotate(45deg) translate(6.2px, 6.2px);
+}
+
+.burger.active .bar2 {
+  opacity: 0;
+}
+
+.burger.active .bar3 {
+  transform: rotate(-45deg) translate(6.2px, -6.2px);
+}
+
+footer {
+  background-color: #06302e;
+  padding: 24px 0;
+}
+
+footer p {
+  text-align: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .burger {
+    display: block;
+  }
+
+  .nav-links {
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    gap: 24px;
+    padding: 20px 0;
+    background-color: #06302e;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 32px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 476px) {
+  section {
+    margin: 32px 0;
+  }
+  .nav-wrapper {
+    padding: 18px 24px;
+  }
+  .nav-links {
+    top: 68px;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
